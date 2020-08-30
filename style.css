@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Nirmala";
+    src: url("assets/nirmala.ttf");
+}
+
+@font-face {
+    font-family: "Nirmala Bold";
+    src: url("assets/nirmalab.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    background: #f1f3f8;
+}
+
+main {
+    overflow: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Style  */
+
+.bg-image {
+    /* the image used */
+    background-image: url("assets/nathan-dumlao-unsplash.jpg");
+    height: 100%;
+    /* centering */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: "Nirmala Bold";
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    padding-left: 25px;
+    padding-right: 12.5px;
+    background:#2f2519;
+    overflow: hidden;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu a {
+    padding-left: 12.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 12.5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: none;
+    font-family: "Nirmala Bold";
+    font-size: 1.2em;
+}
+
+.menu a:hover {
+    background-color: #4a3f35;
+}
+
+ header {
+     display: inline;
+ }
+/* End of header style */
+
+/* Content Style */
+h1 {
+    font-family: "Nirmala Bold";
+    font-size: 40px;
+}
+
+p, table {
+    font-family: "Nirmala";
+    font-size: 16px;
+}
+
+.content {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #2f2519;
+}
+
+.content img {
+    max-height: 200px;
+    border-radius: 8px;
+}
+
+.main-content {
+    float: left;
+    width: 73%;
+    margin-bottom: 50px;
+}
+
+.left-content {
+    display: block;
+    clear: right;
+}
+
+.left-content img{
+    float: left;
+    margin-right: 25px;
+}
+
+.right-content img{
+    float: right;
+    margin-left: 25px;
+}
+
+.right-content {
+    text-align: right;
+    display: block;
+    clear: left;
+}
+
+.profile {
+    float: right;
+    width: 26%;
+    text-align: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* End of Content Style */
+
+/* About Style */
+.aboutus {
+    background-color: #4a3f35 ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #f1f1f1;
+    text-align: center;
+}
+/* End of about Style */
+
+/* Footer Style */
+footer {
+    padding: 20px;
+    background-color: #2f2519;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+footer a {
+    color: wheat;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .main-content , .profile {
+        width: 100%;
+        padding: 5px;
+    }
+
+    img{
+        max-width: 150px;
+    }
+}
+
